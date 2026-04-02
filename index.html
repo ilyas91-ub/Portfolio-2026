@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elyas - Portfolio</title>
+    <meta name="description" content="Portfolio professionnel d'Elyas, développeur web front-end et UI/UX designer.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Lenis -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="loader-dots">
+            <div class="loader-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-text">Elyas</span>
+                    <div class="logo-dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+                <div class="nav-menu">
+                    <a href="#hero" class="nav-link">Accueil</a>
+                    <a href="#about" class="nav-link">À Propos</a>
+                    <a href="#experience" class="nav-link">Expérience</a>
+                    <a href="#projects" class="nav-link">Missions</a>
+                    <a href="#veille" class="nav-link">Veille</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title gsap-reveal">Elyas</h1>
+            <h2 class="hero-subtitle gsap-reveal">Développeur Web Front-End & UI/UX Designer</h2>
+            <p class="hero-description gsap-reveal">Créateur d'expériences digitales modernes et intuitives, passionné par l'innovation technologique et le design centré utilisateur.</p>
+            <a href="#projects" class="hero-cta gsap-reveal magnetic-btn">Voir mes missions</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title gsap-reveal">À Propos</h2>
+            <div class="about-content">
+                <div class="about-text gsap-reveal">
+                    <p>Je suis un développeur web front-end passionné avec une expertise en UI/UX design. Mon approche combine créativité technique et rigueur méthodologique pour créer des interfaces utilisateur exceptionnelles qui allient esthétique et performance.</p>
+                    <p>Spécialisé dans les technologies modernes du web, je m'efforce constamment d'apprendre et d'innover pour rester à la pointe des tendances et des meilleures pratiques.</p>
+                </div>
+                <div class="about-role gsap-reveal">
+                    <div class="role-card">
+                        <div class="role-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Photo de profil Elyas">
+                        </div>
+                        <div class="role-info">
+                            <h3>Mon Rôle</h3>
+                            <p class="role-position">Développeur Front-End Senior</p>
+                            <p class="role-company">Entreprise Tech Innovante</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link">LinkedIn</a>
+                                <a href="#" class="social-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Années d'expérience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Technologies maîtrisées</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projets réalisés</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Satisfaction client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title gsap-reveal">Mon Entreprise</h2>
+            <div class="experience-content gsap-reveal">
+                <div class="company-info">
+                    <h3>TechInnov Solutions</h3>
+                    <p>Entreprise leader dans le développement de solutions digitales innovantes, spécialisée dans les applications web modernes et les expériences utilisateur de pointe.</p>
+                    <button class="expand-btn">En savoir plus</button>
+                    <div class="expanded-content">
+                        <p>Notre mission est de transformer les idées en réalités digitales exceptionnelles. Nous combinons expertise technique, créativité et méthodologie agile pour livrer des produits qui dépassent les attentes.</p>
+                    </div>
+                </div>
+                <div class="org-chart">
+                    <div class="org-level">
+                        <div class="org-item ceo">CEO</div>
+                    </div>
+                    <div class="org-level">
+                        <div class="org-item cto">CTO</div>
+                        <div class="org-item cmo">CMO</div>
+                    </div>
+                    <div class="org-level">
+                        <div class="org-item dev">Dev Team</div>
+                        <div class="org-item design">Design Team</div>
+                        <div class="org-item marketing">Marketing</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title gsap-reveal">Mes Missions</h2>
+            <div class="filter-buttons gsap-reveal">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="pro">Projets Pros</button>
+                <button class="filter-btn" data-filter="perso">Projets Persos</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card gsap-reveal" data-category="pro">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Projet E-commerce">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Projet Professionnel</div>
+                        <h3 class="project-title">Plateforme E-commerce</h3>
+                        <p class="project-description">Développement d'une plateforme e-commerce moderne avec React et Node.js, intégrant paiements sécurisés et gestion des stocks.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card gsap-reveal" data-category="perso">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop" alt="Portfolio Personnel">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Projet Personnel</div>
+                        <h3 class="project-title">Portfolio Interactif</h3>
+                        <p class="project-description">Création d'un portfolio personnel avec animations GSAP et design glassmorphism, optimisé pour tous les appareils.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">GSAP</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card gsap-reveal" data-category="pro">
+                    <div class="project-image">
+                        <img src="mcd44.png" alt="Application Mobile">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Projet Professionnel</div>
+                        <h3 class="project-title">App Mobile Hybride</h3>
+                        <p class="project-description">Développement d'une application mobile hybride avec Ionic et Angular, offrant une expérience native sur iOS et Android.</p>
+                        <div class="project-tags">
+                            <span class="tag">Ionic</span>
+                            <span class="tag">Angular</span>
+                            <span class="tag">TypeScript</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Veille Section -->
+    <section id="veille" class="veille">
+        <div class="container">
+            <h2 class="section-title gsap-reveal">Veille Technologique</h2>
+            <div class="veille-content">
+                <div class="methodology-grid gsap-reveal">
+                    <div class="methodology-item">
+                        <div class="methodology-icon">🔍</div>
+                        <h3>Sourcing</h3>
+                        <p>Recherche active d'informations pertinentes via RSS, newsletters et réseaux professionnels.</p>
+                    </div>
+                    <div class="methodology-item">
+                        <div class="methodology-icon">📊</div>
+                        <h3>Analyse</h3>
+                        <p>Évaluation critique des tendances et technologies émergentes pour leur pertinence métier.</p>
+                    </div>
+                    <div class="methodology-item">
+                        <div class="methodology-icon">📢</div>
+                        <h3>Diffusion</h3>
+                        <p>Partage des connaissances via présentations internes et contributions à la communauté.</p>
+                    </div>
+                </div>
+                <div class="featured-article gsap-reveal">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=400&fit=crop" alt="Article en vedette">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-category">Tendances 2024</div>
+                        <h3>Le Futur du Développement Web : IA et Automatisation</h3>
+                        <p>Exploration des impacts de l'intelligence artificielle sur les pratiques de développement, des outils d'assistance au code aux plateformes no-code révolutionnaires.</p>
+                        <a href="#" class="article-link">Lire l'article complet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title gsap-reveal">Contact</h2>
+            <div class="contact-content gsap-reveal">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn magnetic-btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Elyas. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle">
+        <span class="theme-icon">🌙</span>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
